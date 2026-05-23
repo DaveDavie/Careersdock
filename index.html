@@ -1,0 +1,109 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <link href="images/89f361790_logo.png" rel="icon" type="image/svg+xml">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="/manifest.json" rel="manifest">
+  <title>
+   AtlasHub
+  </title>
+  <script crossorigin="" src="js/index-CKQFImcP.js" type="module">
+  </script>
+  <link crossorigin="" href="css/index-CMzuXGtD.css" rel="stylesheet">
+  <script type="module">
+   if (window.self === window.top) {
+  let lastPath = "";
+  function getPageNameFromPath(path) {
+    const segments = path.split("/").filter(Boolean);
+    return segments[0] || null;
+  }
+  function trackPageView() {
+    const path = window.location.pathname;
+    if (path === lastPath) return;
+    lastPath = path;
+    const pageName = getPageNameFromPath(path) || "home";
+    const appId = "6a119712b9ae0faad25f7ccb";
+    if (!appId) return;
+    fetch(`/api/app-logs/${appId}/log-user-in-app/${pageName}`, {
+      method: "POST",
+    }).catch(() => {});
+  }
+  const originalPushState = history.pushState.bind(history);
+  history.pushState = function (...args) {
+    originalPushState(...args);
+    trackPageView();
+  };
+  const originalReplaceState = history.replaceState.bind(history);
+  history.replaceState = function (...args) {
+    originalReplaceState(...args);
+    trackPageView();
+  };
+  window.addEventListener("popstate", trackPageView);
+  trackPageView();
+}
+  </script>
+  <meta content="A high-performance directory for discovering, comparing, and booking the world's most premium, design-forward coworking and professional creative spaces." name="description">
+  <meta content="AtlasHub" property="og:title">
+  <meta content="A high-performance directory for discovering, comparing, and booking the world's most premium, design-forward coworking and professional creative spaces." property="og:description">
+  <meta content="images/89f361790_logo_1.png" property="og:image">
+  <meta content="https://fearless-atlas-hub-flow.base44.app" property="og:url">
+  <meta content="website" property="og:type">
+  <meta content="AtlasHub" property="og:site_name">
+  <meta content="AtlasHub" name="twitter:title">
+  <meta content="A high-performance directory for discovering, comparing, and booking the world's most premium, design-forward coworking and professional creative spaces." name="twitter:description">
+  <meta content="https://media.base44.com/images/public/6a119712b9ae0faad25f7ccb/89f361790_logo.png/v1/fill/w_1200,h_630/89f361790_logo.png" name="twitter:image">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="https://fearless-atlas-hub-flow.base44.app" name="twitter:url">
+  <meta content="yes" name="mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="AtlasHub" name="apple-mobile-web-app-title">
+  <link href="https://fearless-atlas-hub-flow.base44.app" rel="canonical">
+  <script data-seo-source="builder" type="application/ld+json">
+   {"name": "AtlasHub", "@context": "https://schema.org", "@type": "WebSite", "url": "https://fearless-atlas-hub-flow.base44.app"}
+  </script>
+  <script data-seo-source="builder" type="application/ld+json">
+   {"name": "AtlasHub", "logo": "https://media.base44.com/images/public/6a119712b9ae0faad25f7ccb/89f361790_logo.png", "@context": "https://schema.org", "@type": "Organization", "url": "https://fearless-atlas-hub-flow.base44.app"}
+  </script>
+  <script async="true" data-app-id="6a119712b9ae0faad25f7ccb" data-platform-url="https://app.base44.com" src="js/badge.js">
+  </script>
+ </head>
+ <body>
+  <div id="root">
+   <div data-seo-source="builder" id="seo-snapshot" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
+    <h1>
+     AtlasHub
+    </h1>
+    <p>
+     A high-performance directory for discovering, comparing, and booking the world's most premium, design-forward coworking and professional creative spaces.
+    </p>
+    <nav aria-label="Pages">
+     <h2>
+      Pages
+     </h2>
+     <ul>
+      <li>
+       <a href="/Login">
+        Login
+       </a>
+      </li>
+      <li>
+       <a href="/Register">
+        Register
+       </a>
+      </li>
+      <li>
+       <a href="/ForgotPassword">
+        Forgot Password
+       </a>
+      </li>
+      <li>
+       <a href="/ResetPassword">
+        Reset Password
+       </a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+  </div>
+ 
+
+</body></html>
